@@ -1,4 +1,4 @@
-package go_fib
+package main
 
 import (
 	"flag"
