@@ -3,7 +3,6 @@ package engine
 import (
 	"bufio"
 	"encoding/json"
-	"fmt"
 	"github.com/Zheaoli/golang-with-fib/config"
 	"github.com/Zheaoli/golang-with-fib/utils"
 	"io"
@@ -33,7 +32,6 @@ func InitFunction() {
 }
 
 func demo(params interface{}) (interface{}, int) {
-	fmt.Println(params)
 	data, err := ioutil.ReadFile(config.ServerConfig.TemplatePath)
 	if err != nil {
 		return "", utils.RemoteServerError
